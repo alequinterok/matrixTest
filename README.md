@@ -4,6 +4,7 @@
 - Antisimétrica  
 - Reflexiva  
   
+  
 **También determina en caso de cumplirse las condiciones necesarias si la relación es:**  
 - De orden  
 - De equivalencia
