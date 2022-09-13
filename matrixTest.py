@@ -79,9 +79,10 @@ def es_de_equivalencia(reflexiva: bool, simetrica: bool, transitiva: bool) -> bo
         
 
 def imprimir_matriz() -> None:
+    print("\nMatriz:\n")
     for fila in MATRIZ:
         print(fila)
-        
+
 
 def main():
     
@@ -94,18 +95,21 @@ def main():
     relacion_de_equivalencia = es_de_equivalencia(reflexiva, simetrica, transitiva)
     
     limpiar_pantalla()
+
+
+
+    print("""
+Test de matrices de adyacencia | Matemática Discreta
+----------------------------------------------------\n""")
     
-    print("\n\nTest de matrices de adyacencia - Matemática Discreta")
-    print("\nEs reflexiva: ", reflexiva)
-    print("Es antisimetrica: ", antisimetrica)
-    print("Es simetrica: ", simetrica)
-    print("Es transitiva: ", transitiva)
+    imprimir_matriz()
     
-    
-    if relacion_de_orden == True:
-        print("\nEs relacion de orden: ", relacion_de_orden)
-    
-    if relacion_de_equivalencia == True:
-        print("\nEs relacion de equivalencia: ", relacion_de_equivalencia)
-        
+    print(f"""\n
+> Es reflexiva: {reflexiva}
+> Es antisimetrica: {antisimetrica}
+> Es simetrica: {simetrica}
+> Es transitiva: {transitiva}\n\n
+> Es relacion de orden: {relacion_de_orden}
+> Es relacion de equivalencia: {relacion_de_equivalencia}\n""")
+
 main()    
